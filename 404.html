@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 Page Not Found — TALENTIQ AI Recruitment Platform</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body style="background: var(--bg-dark); min-height: 100vh; display: flex; flex-direction: column;">
+
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="scrollProgressFill"></div>
+  </div>
+
+  <header class="navbar">
+    <div class="container navbar-container">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/logo.webp" alt="TALENTIQ Logo" loading="eager">
+        <div class="brand-text">
+          <span class="brand-name">TALENTIQ</span>
+          <span class="brand-subtitle">AI RECRUITMENT PLATFORM</span>
+        </div>
+      </a>
+
+      <div class="nav-cta">
+        <a href="index.html" class="btn btn-outline btn-sm">Return Home</a>
+        <button class="btn btn-cyan btn-sm open-login-btn" data-role="user">Sign In</button>
+      </div>
+    </div>
+  </header>
+
+  <main style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 120px 20px 60px 20px;">
+    <div class="container text-center" style="max-width: 680px; margin: 0 auto; text-align: center;">
+      
+      <!-- AI Scanning Visual for 404 -->
+      <div style="position: relative; width: 140px; height: 140px; margin: 0 auto 30px auto;" class="ai-scan-overlay">
+        <div class="preloader-ring" style="animation: spin 3s linear infinite;"></div>
+        <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 3rem; font-weight: 900; color: var(--cyan);">
+          404
+        </div>
+        <div class="ai-scan-bar"></div>
+      </div>
+
+      <span class="eyebrow" style="margin-bottom: 16px;">AI SIGNAL: PROFILE NOT FOUND</span>
+
+      <h1 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; color: var(--white); margin-bottom: 16px; line-height: 1.2;">
+        The candidate you're looking for <br>
+        <span style="background: linear-gradient(135deg, var(--cyan) 0%, var(--primary) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">isn't in this talent pool.</span>
+      </h1>
+
+      <p style="font-size: 1.05rem; color: var(--text-secondary); margin-bottom: 36px; line-height: 1.6;">
+        This page may have moved, the URL might be mis-typed, or the requested recruitment resource may no longer exist in our database.
+      </p>
+
+      <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+        <a href="index.html" class="btn btn-primary btn-lg magnetic-btn">BACK TO HOME →</a>
+        <button class="btn btn-outline btn-lg open-login-btn" data-role="user">OPEN PLATFORM</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer" style="padding: 40px 0 20px 0;">
+    <div class="container text-center" style="text-align: center; font-size: 0.85rem; color: var(--dark-muted);">
+      © 2026 TALENTIQ AI Recruitment Platform. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Login Modal -->
+  <div class="login-modal-overlay" id="loginModal">
+    <div class="login-modal-card">
+      <button class="close-modal-btn" id="closeModalBtn" aria-label="Close modal">✕</button>
+
+      <div class="modal-header">
+        <img src="assets/logo2.webp" alt="TALENTIQ Logo">
+        <h3 class="modal-title">TALENTIQ WORKSPACE</h3>
+        <p class="modal-subtitle">Sign in to your AI recruitment platform.</p>
+      </div>
+
+      <div id="loginSection" class="form-state active">
+        <div class="auth-tabs">
+          <button class="auth-tab active" data-role="user">USER LOGIN</button>
+          <button class="auth-tab" data-role="admin">ADMIN LOGIN</button>
+        </div>
+
+        <form id="userLoginForm">
+          <div class="form-group">
+            <label class="form-label" for="loginEmail">Email Address</label>
+            <input type="email" id="loginEmail" class="form-input" placeholder="name@company.com" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="loginPassword">Password</label>
+            <div class="input-wrapper">
+              <input type="password" id="loginPassword" class="form-input" placeholder="••••••••" required>
+              <span class="password-toggle">🔒</span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label class="checkbox-label"><input type="checkbox"> Remember Me</label>
+            <a href="#" id="goToForgot" class="form-link">Forgot Password?</a>
+          </div>
+
+          <div id="loginError" class="form-error-msg"></div>
+
+          <button type="button" id="loginSubmitBtn" class="btn btn-primary btn-lg" style="width: 100%;">SIGN IN TO WORKSPACE →</button>
+          <button type="button" id="adminSubmitBtn" class="btn btn-cyan btn-lg" style="width: 100%; display: none;">LOGIN AS ADMIN →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/forms.js"></script>
+</body>
+</html>

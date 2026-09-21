@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resources & Guides — TALENTIQ AI Recruitment Platform</title>
+  <meta name="description" content="Explore recruitment guides, AI hiring insights, enterprise talent analytics handbooks, and FAQ.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="scrollProgressFill"></div>
+  </div>
+
+  <div class="preloader" id="preloader">
+    <div class="preloader-scanner">
+      <div class="preloader-ring"></div>
+      <div class="preloader-silhouette">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#36C7D9" stroke-width="2">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+          <circle cx="12" cy="7" r="4"/>
+        </svg>
+      </div>
+    </div>
+    <div class="preloader-brand">TALENTIQ</div>
+    <div class="preloader-status" id="preloaderStatus">LOADING RESOURCES...</div>
+    <div class="preloader-progress-track">
+      <div class="preloader-progress-fill" id="preloaderFill"></div>
+    </div>
+    <div class="preloader-percent" id="preloaderPercent">0%</div>
+  </div>
+
+  <header class="navbar">
+    <div class="container navbar-container">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/logo.webp" alt="TALENTIQ Logo" loading="eager">
+      </a>
+
+      <nav class="nav-links-wrapper">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="solutions.html" class="nav-link">Solutions</a></li>
+          <li><a href="resources.html" class="nav-link active">Resources</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-cta">
+        <button class="btn btn-outline btn-sm open-login-btn" data-role="user">Sign In</button>
+        <button class="btn btn-cyan btn-sm magnetic-btn open-login-btn" data-role="user">Get Started</button>
+      </div>
+
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <div class="brand-logo">
+        <img src="assets/logo.webp" alt="TALENTIQ">
+        <div class="brand-text">
+          <span class="brand-name">TALENTIQ</span>
+          <span class="brand-subtitle">AI RECRUITMENT</span>
+        </div>
+      </div>
+      <button class="drawer-close-btn" id="drawerClose" aria-label="Close Menu">✕</button>
+    </div>
+
+    <ul class="drawer-menu">
+      <li class="drawer-menu-item"><a href="index.html">Home</a></li>
+      <li class="drawer-menu-item"><a href="about.html">About</a></li>
+      <li class="drawer-menu-item"><a href="solutions.html">Solutions</a></li>
+      <li class="drawer-menu-item"><a href="resources.html" class="active">Resources</a></li>
+      <li class="drawer-menu-item"><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="drawer-actions">
+      <button class="btn btn-outline btn-lg open-login-btn" data-role="user">Sign In</button>
+      <button class="btn btn-primary btn-lg open-login-btn" data-role="user">Get Started</button>
+    </div>
+  </aside>
+
+  <main>
+    <!-- ============================================================
+         SECTION 01 — RESOURCES HERO (MAJOR SECTION 1)
+         ============================================================ -->
+    <section class="section section-dark" style="padding-top: 140px; text-align: center;">
+      <div class="container container-narrow reveal">
+        <span class="eyebrow">KNOWLEDGE & INSIGHTS</span>
+        <h1 style="font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; line-height: 1.1; color: var(--white); margin-bottom: 20px;">
+          Insights for <br>
+          <span style="background: linear-gradient(135deg, var(--cyan) 0%, var(--primary-soft) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Modern Hiring Teams.</span>
+        </h1>
+        <p style="font-size: 1.2rem; color: var(--text-secondary); max-width: 640px; margin: 0 auto 30px auto; line-height: 1.6;">
+          Deep dives, best practice playbooks, and recruitment analytics guides curated by enterprise talent leaders.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 02 — FEATURED INSIGHTS (MAJOR SECTION 2)
+         ============================================================ -->
+    <section class="section section-secondary">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow">FEATURED ARTICLES</span>
+          <h2 class="section-title">Latest Recruitment <span>Thought Leadership.</span></h2>
+          <p class="section-subtitle">Stay ahead of AI recruiting trends, talent intelligence strategies, and workforce optimization.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;" class="grid-3col">
+          <!-- Article 1 -->
+          <div class="reveal-scale hover-lift" style="background: var(--surface); border: 1px solid var(--border-dark); border-radius: var(--radius-lg); overflow: hidden;">
+            <!-- Replaceable image: resources.webp -->
+            <div style="height: 180px; overflow: hidden;">
+              <img src="assets/images/resources.webp" alt="AI Recruitment Strategy" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div style="padding: 24px;">
+              <div style="display: flex; justify-content: space-between; font-size: 0.78rem; color: var(--cyan); margin-bottom: 10px; font-weight: 700;">
+                <span>AI RECRUITING</span>
+                <span>SEP 2026</span>
+              </div>
+              <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--white); margin-bottom: 10px; line-height: 1.4;">The 2026 Enterprise Guide to AI Candidate Matching</h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 20px; line-height: 1.5;">How semantic resume analysis and culture fit signals are replacing legacy keyword filters.</p>
+              <a href="404.html" class="form-link" style="font-size: 0.88rem; font-weight: 700;">READ ARTICLE →</a>
+            </div>
+          </div>
+
+          <!-- Article 2 -->
+          <div class="reveal-scale hover-lift delay-100" style="background: var(--surface); border: 1px solid var(--border-dark); border-radius: var(--radius-lg); overflow: hidden;">
+            <!-- Replaceable image: analytics.webp -->
+            <div style="height: 180px; overflow: hidden;">
+              <img src="assets/images/analytics.webp" alt="Talent Strategy Article" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div style="padding: 24px;">
+              <div style="display: flex; justify-content: space-between; font-size: 0.78rem; color: var(--primary-soft); margin-bottom: 10px; font-weight: 700;">
+                <span>TALENT STRATEGY</span>
+                <span>AUG 2026</span>
+              </div>
+              <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--white); margin-bottom: 10px; line-height: 1.4;">Reducing Sourcing Cycles by 68% with Automated Screening</h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 20px; line-height: 1.5;">Real-world case studies showing how talent operations streamline high-volume applicant pipelines.</p>
+              <a href="404.html" class="form-link" style="font-size: 0.88rem; font-weight: 700;">READ ARTICLE →</a>
+            </div>
+          </div>
+
+          <!-- Article 3 -->
+          <div class="reveal-scale hover-lift delay-200" style="background: var(--surface); border: 1px solid var(--border-dark); border-radius: var(--radius-lg); overflow: hidden;">
+            <!-- Replaceable image: collaboration.webp -->
+            <div style="height: 180px; overflow: hidden;">
+              <img src="assets/images/collaboration.webp" alt="Hiring Analytics Article" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div style="padding: 24px;">
+              <div style="display: flex; justify-content: space-between; font-size: 0.78rem; color: var(--success); margin-bottom: 10px; font-weight: 700;">
+                <span>HIRING ANALYTICS</span>
+                <span>JUL 2026</span>
+              </div>
+              <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--white); margin-bottom: 10px; line-height: 1.4;">Building Data-Driven Interview Scorecards for Remote Teams</h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 20px; line-height: 1.5;">Best practices for structuring collaborative interviewer feedback and reducing evaluation bias.</p>
+              <a href="404.html" class="form-link" style="font-size: 0.88rem; font-weight: 700;">READ ARTICLE →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 03 — RECRUITMENT GUIDES (MAJOR SECTION 3)
+         ============================================================ -->
+    <section class="section section-dark">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow">DOWNLOADABLE PLAYBOOKS</span>
+          <h2 class="section-title">Recruitment Guides <span>& Handbooks.</span></h2>
+          <p class="section-subtitle">Comprehensive frameworks designed to help HR leaders optimize recruitment infrastructure.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;" class="grid-2col">
+          <div class="reveal-left hover-lift" style="background: var(--surface); border: 1px solid var(--border-dark); border-radius: var(--radius-md); padding: 28px; display: flex; align-items: center; justify-content: space-between;">
+            <div>
+              <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--white); margin-bottom: 6px;">AI Recruitment Guide</h4>
+              <p style="font-size: 0.88rem; color: var(--text-secondary);">Frameworks for ethical AI adoption in high-volume hiring.</p>
+            </div>
+            <a href="404.html" class="btn btn-cyan btn-sm">DOWNLOAD →</a>
+          </div>
+
+          <div class="reveal-right hover-lift" style="background: var(--surface); border: 1px solid var(--border-dark); border-radius: var(--radius-md); padding: 28px; display: flex; align-items: center; justify-content: space-between;">
+            <div>
+              <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--white); margin-bottom: 6px;">Modern Candidate Screening</h4>
+              <p style="font-size: 0.88rem; color: var(--text-secondary);">Automating resume parsing without losing candidate connection.</p>
+            </div>
+            <a href="404.html" class="btn btn-primary btn-sm">DOWNLOAD →</a>
+          </div>
+
+          <div class="reveal-left hover-lift" style="background: var(--surface); border: 1px solid var(--border-dark); border-radius: var(--radius-md); padding: 28px; display: flex; align-items: center; justify-content: space-between;">
+            <div>
+              <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--white); margin-bottom: 6px;">Building Better Hiring Workflows</h4>
+              <p style="font-size: 0.88rem; color: var(--text-secondary);">Structuring multi-stage interviews for cross-functional teams.</p>
+            </div>
+            <a href="404.html" class="btn btn-outline btn-sm">READ GUIDE →</a>
+          </div>
+
+          <div class="reveal-right hover-lift" style="background: var(--surface); border: 1px solid var(--border-dark); border-radius: var(--radius-md); padding: 28px; display: flex; align-items: center; justify-content: space-between;">
+            <div>
+              <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--white); margin-bottom: 6px;">Recruitment Analytics Handbook</h4>
+              <p style="font-size: 0.88rem; color: var(--text-secondary);">Measuring candidate velocity, pipeline conversion, and ROI.</p>
+            </div>
+            <a href="404.html" class="btn btn-cyan btn-sm">READ GUIDE →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 04 — FAQ (MAJOR SECTION 4)
+         ============================================================ -->
+    <section class="section section-secondary">
+      <div class="container container-narrow">
+        <div class="section-header reveal">
+          <span class="eyebrow">FREQUENTLY ASKED QUESTIONS</span>
+          <h2 class="section-title">Everything You Need <span>To Know.</span></h2>
+          <p class="section-subtitle">Common questions about TALENTIQ AI recruitment engine, security, and candidate matching.</p>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 16px;" class="reveal">
+          <style>
+            .faq-item {
+              background: var(--surface);
+              border: 1px solid var(--border-dark);
+              border-radius: var(--radius-md);
+              overflow: hidden;
+              transition: border-color var(--transition-fast);
+            }
+            .faq-item.active {
+              border-color: var(--cyan);
+            }
+            .faq-question {
+              padding: 20px 24px;
+              font-size: 1.05rem;
+              font-weight: 700;
+              color: var(--white);
+              cursor: pointer;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              user-select: none;
+            }
+            .faq-answer {
+              max-height: 0;
+              overflow: hidden;
+              transition: max-height 0.35s ease, padding 0.35s ease;
+              padding: 0 24px;
+              font-size: 0.95rem;
+              color: var(--text-secondary);
+              line-height: 1.6;
+            }
+            .faq-item.active .faq-answer {
+              max-height: 200px;
+              padding: 0 24px 20px 24px;
+            }
+            .faq-icon {
+              font-size: 1.2rem;
+              transition: transform 0.3s ease;
+              color: var(--cyan);
+            }
+            .faq-item.active .faq-icon {
+              transform: rotate(45deg);
+            }
+          </style>
+
+          <div class="faq-item active">
+            <div class="faq-question">
+              <span>What is AI recruitment?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              AI recruitment uses artificial intelligence and machine learning algorithms to automate resume screening, score candidate suitability, match applicant profiles against job specifications, and streamline hiring workflows.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>How does candidate matching work?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              TALENTIQ analyzes job descriptions and candidate resumes using natural language processing (NLP) to generate a match score percentage (e.g., 94%) based on skill overlap, experience depth, and role requirements.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Can recruiters review AI recommendations?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              Yes, absolutely. TALENTIQ operates under a "Human-in-the-Loop" architecture where AI provides transparent scorecards and recommendations while human recruiters retain 100% final decision authority.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>How is candidate data protected?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              Candidate data is protected using enterprise-grade AES-256 encryption at rest and TLS 1.3 in transit, backed by SOC2 compliant infrastructure and strict role-based access controls.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Can teams collaborate on candidates?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              Yes, team members can share candidate profiles, submit standardized interview scorecards, leave real-time feedback comments, and track candidate pipeline progress together.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Can the platform support multiple job roles?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              Yes, TALENTIQ supports unlimited concurrent job openings, customized candidate pipelines per department, and multi-tenant recruiter permissions.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>How does recruitment analytics work?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              The platform aggregates pipeline metrics automatically, offering interactive SVG visualizations for time-to-hire, funnel stage conversion rates, candidate sourcing channels, and interviewer productivity.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Does the platform support enterprise hiring teams?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              Yes, TALENTIQ provides enterprise-grade governance including admin audit logs, organization hierarchy management, single sign-on (SSO), and custom ATS API integrations.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 05 — NEWSLETTER (MAJOR SECTION 5)
+         ============================================================ -->
+    <section class="section section-dark text-center" style="padding: 100px 0;">
+      <div class="container container-narrow reveal">
+        <div style="background: linear-gradient(160deg, #101D30 0%, #07111F 100%); border: 1px solid var(--border-dark); border-radius: var(--radius-xl); padding: 50px 30px; box-shadow: var(--shadow-cyan);">
+          <span class="eyebrow" style="margin-bottom: 16px;">TALENT INTELLIGENCE DISPATCH</span>
+          <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; color: var(--white); margin-bottom: 14px;">
+            Stay Ahead of <span style="color: var(--cyan);">Modern Hiring.</span>
+          </h2>
+          <p style="font-size: 1.05rem; color: var(--text-secondary); max-width: 540px; margin: 0 auto 30px auto;">
+            Subscribe to our weekly newsletter for exclusive AI recruitment trends, talent sourcing playbooks, and hiring benchmark reports.
+          </p>
+
+          <form class="newsletter-form" style="max-width: 480px; margin: 0 auto;">
+            <div style="display: flex; gap: 10px;">
+              <input type="email" placeholder="Enter your email address" required style="flex: 1; padding: 14px 18px; background: rgba(255,255,255,0.06); border: 1px solid var(--border-dark); border-radius: var(--radius-md); color: var(--white); font-size: 0.95rem;">
+              <button type="submit" class="btn btn-cyan magnetic-btn">SUBSCRIBE</button>
+            </div>
+          </form>
+          <div class="newsletter-msg" style="font-size: 0.9rem; margin-top: 14px; display: none;"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+
+  <!-- Login Modal -->
+  <div class="login-modal-overlay" id="loginModal">
+    <div class="login-modal-card">
+      <button class="close-modal-btn" id="closeModalBtn" aria-label="Close modal">✕</button>
+
+      <div class="modal-header">
+        <img src="assets/logo2.webp" alt="TALENTIQ Logo">
+        <h3 class="modal-title">TALENTIQ WORKSPACE</h3>
+        <p class="modal-subtitle">Sign in to your AI recruitment platform.</p>
+      </div>
+
+      <div id="loginSection" class="form-state active">
+        <div class="auth-tabs">
+          <button class="auth-tab active" data-role="user">USER LOGIN</button>
+          <button class="auth-tab" data-role="admin">ADMIN LOGIN</button>
+        </div>
+
+        <form id="userLoginForm">
+          <div class="form-group">
+            <label class="form-label" for="loginEmail">Email Address</label>
+            <input type="email" id="loginEmail" class="form-input" placeholder="name@company.com" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="loginPassword">Password</label>
+            <div class="input-wrapper">
+              <input type="password" id="loginPassword" class="form-input" placeholder="••••••••" required>
+              <span class="password-toggle">🔒</span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label class="checkbox-label"><input type="checkbox"> Remember Me</label>
+            <a href="#" id="goToForgot" class="form-link">Forgot Password?</a>
+          </div>
+
+          <div id="loginError" class="form-error-msg"></div>
+
+          <button type="button" id="loginSubmitBtn" class="btn btn-primary btn-lg" style="width: 100%;">SIGN IN TO WORKSPACE →</button>
+          <button type="button" id="adminSubmitBtn" class="btn btn-cyan btn-lg" style="width: 100%; display: none;">LOGIN AS ADMIN →</button>
+        </form>
+
+        <p style="text-align: center; margin-top: 20px; font-size: 0.88rem; color: var(--text-secondary);">
+          Don't have an account? <a href="#" id="goToSignUp" class="form-link">Create Account</a>
+        </p>
+      </div>
+
+      <div id="forgotSection" class="form-state">
+        <h4 style="font-size: 1.2rem; font-weight: 700; color: var(--white); margin-bottom: 6px; text-align: center;">Recover Access</h4>
+        <p style="font-size: 0.85rem; color: var(--text-secondary); text-align: center; margin-bottom: 20px;">Enter your registered work email.</p>
+        <form>
+          <div class="form-group">
+            <label class="form-label" for="forgotEmail">Email Address</label>
+            <input type="email" id="forgotEmail" class="form-input" placeholder="name@company.com" required>
+          </div>
+          <div id="forgotError" class="form-error-msg"></div>
+          <div id="forgotSuccess" class="form-success-msg"></div>
+          <button type="button" id="resetSubmitBtn" class="btn btn-primary btn-lg" style="width: 100%; margin-bottom: 14px;">SEND RESET LINK →</button>
+          <button type="button" class="btn btn-outline btn-lg back-to-login" style="width: 100%;">BACK TO LOGIN</button>
+        </form>
+      </div>
+
+      <div id="signUpSection" class="form-state">
+        <h4 style="font-size: 1.2rem; font-weight: 700; color: var(--white); margin-bottom: 6px; text-align: center;">Create Account</h4>
+        <form>
+          <div class="form-group">
+            <label class="form-label" for="signUpName">Full Name</label>
+            <input type="text" id="signUpName" class="form-input" placeholder="John Doe" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="signUpEmail">Email Address</label>
+            <input type="email" id="signUpEmail" class="form-input" placeholder="john@company.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="signUpPhone">Mobile Number (Digits Only)</label>
+            <input type="text" id="signUpPhone" class="form-input" placeholder="9876543210" maxlength="10" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="signUpPassword">Password (Min 8 chars)</label>
+            <div class="input-wrapper">
+              <input type="password" id="signUpPassword" class="form-input" placeholder="••••••••" required>
+              <span class="password-toggle">🔒</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="signUpConfirmPassword">Confirm Password</label>
+            <div class="input-wrapper">
+              <input type="password" id="signUpConfirmPassword" class="form-input" placeholder="••••••••" required>
+              <span class="password-toggle">🔒</span>
+            </div>
+          </div>
+          <div id="signUpError" class="form-error-msg"></div>
+          <div id="signUpSuccess" class="form-success-msg"></div>
+          <button type="button" id="signUpSubmitBtn" class="btn btn-cyan btn-lg" style="width: 100%; margin-bottom: 14px;">CREATE ACCOUNT →</button>
+          <button type="button" class="btn btn-outline btn-lg back-to-login" style="width: 100%;">BACK TO LOGIN</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Global Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="container">
+        <div class="footer-grid">
+
+          <!-- Col 01: Brand -->
+          <div class="footer-brand">
+            <a href="index.html" class="brand-logo">
+              <img src="assets/logo.webp" alt="TALENTIQ Logo" loading="lazy">
+            </a>
+            <p class="footer-tagline">Intelligent hiring for enterprise teams building what's next — powered by AI.</p>
+            <div class="footer-socials">
+              <a href="#" class="footer-social-icon" aria-label="LinkedIn" title="LinkedIn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+              <a href="#" class="footer-social-icon" aria-label="X (Twitter)" title="X">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a href="#" class="footer-social-icon" aria-label="Instagram" title="Instagram">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="#" class="footer-social-icon" aria-label="YouTube" title="YouTube">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="var(--bg-dark)"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Col 02: Platform -->
+          <div class="footer-col">
+            <h4 class="footer-col-title">Platform</h4>
+            <ul class="footer-links">
+              <li><a href="solutions.html">AI Screening</a></li>
+              <li><a href="solutions.html">Candidate Matching</a></li>
+              <li><a href="solutions.html">Hiring Workflow</a></li>
+              <li><a href="solutions.html">Recruitment Analytics</a></li>
+              <li><a href="solutions.html">Team Collaboration</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 03: Company -->
+          <div class="footer-col">
+            <h4 class="footer-col-title">Company</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="solutions.html">Solutions</a></li>
+              <li><a href="resources.html">Resources</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 04: Newsletter -->
+          <div class="footer-newsletter-col">
+            <h4 class="footer-col-title">Stay Informed</h4>
+            <p class="footer-newsletter-desc">Get AI-powered hiring insights, talent intelligence reports, and platform updates delivered to your inbox.</p>
+            <form class="footer-newsletter-form" id="footerNewsletterForm" novalidate>
+              <div class="footer-input-group">
+                <input type="email" id="footerEmailInput" placeholder="Enter your work email" autocomplete="email" required>
+                <button type="submit" class="btn-subscribe">Subscribe</button>
+              </div>
+            </form>
+            <div class="newsletter-msg" id="footerNewsletterMsg" role="status" aria-live="polite"></div>
+            <div class="footer-badges">
+              <span class="footer-badge"><span class="badge-dot"></span>SOC 2 Type II</span>
+              <span class="footer-badge"><span class="badge-dot"></span>GDPR Ready</span>
+              <span class="footer-badge"><span class="badge-dot"></span>ISO 27001</span>
+            </div>
+          </div>
+
+        </div><!-- /.footer-grid -->
+      </div><!-- /.container -->
+    </div><!-- /.footer-inner -->
+
+    <div class="footer-divider"></div>
+    <div class="container">
+      <div class="footer-bottom">
+        <div class="footer-bottom-copy">
+          <span>© 2026 TALENTIQ. All rights reserved.</span>
+          <span class="footer-ai-badge">⚡ AI-Powered</span>
+        </div>
+        <div class="footer-bottom-links">
+          <a href="about.html">Privacy Policy</a>
+          <a href="about.html">Terms of Service</a>
+          <a href="contact.html">Support</a>
+          <a href="about.html">Security</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top">↑</button>
+
+
+  <script src="js/main.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/analytics.js"></script>
+</body>
+</html>

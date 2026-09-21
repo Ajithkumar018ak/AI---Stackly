@@ -1,0 +1,255 @@
+/* ============================================================
+   TALENTIQ — RESPONSIVE BREAKPOINTS & MOBILE RECOMPOSITION
+   ============================================================ */
+
+/* Extra Large Screens (1440px+) */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1360px;
+  }
+}
+
+/* Large Desktop (1200px - 1439px) */
+@media (max-width: 1399px) {
+  .footer-grid {
+    grid-template-columns: 1.6fr 1fr 1fr 1.4fr;
+    gap: 40px 44px;
+  }
+}
+
+/* Medium Desktop & Laptops (1024px - 1199px) */
+@media (max-width: 1199px) {
+  .nav-links {
+    gap: 24px;
+  }
+
+  .section {
+    padding: 80px 0;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px 32px;
+  }
+
+  .footer-newsletter-col {
+    grid-column: span 3;
+  }
+
+  .footer-input-group {
+    max-width: 460px;
+  }
+}
+
+/* Tablets & Small Laptops (768px - 1023px) */
+@media (max-width: 1023px) {
+  /* Hide Desktop Custom Cursor */
+  .custom-cursor-dot,
+  .custom-cursor-circle {
+    display: none !important;
+  }
+
+  /* Navbar Adjustments */
+  .nav-links,
+  .nav-cta {
+    display: none;
+  }
+
+  .hamburger-btn {
+    display: flex;
+  }
+
+  /* Section Layout Stacking */
+  .grid-2col,
+  .grid-3col,
+  .grid-4col,
+  .hero-composition {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+
+  /* Footer Mobile Stacking */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px 24px;
+  }
+
+  .footer-brand {
+    grid-column: span 2;
+  }
+
+  .footer-newsletter-col {
+    grid-column: span 2;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .footer-bottom-copy {
+    justify-content: center;
+  }
+
+  .footer-bottom-links {
+    justify-content: center;
+  }
+
+  /* Hero Mobile Recomposition */
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-trust-list {
+    justify-content: center;
+  }
+
+  .hero-visual-wrapper {
+    margin-top: 20px;
+  }
+
+  .hero-floating-card {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    margin-top: 16px;
+  }
+
+  .hero-floating-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+}
+
+/* Mobile Devices (576px - 767px) */
+@media (max-width: 767px) {
+  .section {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-brand,
+  .footer-newsletter-col {
+    grid-column: span 1;
+  }
+
+  .footer-input-group {
+    flex-direction: column;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+  }
+
+  .footer-input-group input {
+    border-radius: 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .footer-input-group .btn-subscribe {
+    border-radius: 0;
+    text-align: center;
+    padding: 12px;
+  }
+
+  .footer-badges {
+    gap: 6px;
+  }
+
+  .hero-floating-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .login-modal-card {
+    padding: 24px 20px;
+    border-radius: var(--radius-lg);
+  }
+
+  .auth-tabs {
+    font-size: 0.8rem;
+  }
+
+  /* Tables Horizontal Scroll */
+  .table-responsive-container {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .table-responsive-container table {
+    min-width: 650px;
+  }
+
+  .dashboard-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform var(--transition-normal);
+  }
+
+  .dashboard-sidebar.active {
+    transform: translateX(0);
+  }
+}
+
+/* Small Phones (320px - 575px) */
+@media (max-width: 575px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .eyebrow {
+    font-size: 0.75rem;
+    padding: 4px 12px;
+  }
+
+  .brand-name {
+    font-size: 1.15rem;
+  }
+
+  .brand-subtitle {
+    font-size: 0.55rem;
+  }
+
+  .login-modal-card {
+    margin: 10px;
+  }
+
+  .preloader-scanner {
+    width: 100px;
+    height: 100px;
+  }
+
+  .preloader-progress-track {
+    width: 180px;
+  }
+}
