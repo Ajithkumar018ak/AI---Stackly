@@ -1820,6 +1820,36 @@
                 transition-duration: .01ms !important;
             }
         }
+
+
+        .brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand-logo-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.brand-logo {
+    display: block;
+    width: 150px;
+    height: auto;
+
+    object-fit: contain;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
     </style>
 </head>
 
@@ -1829,13 +1859,7 @@
      PRELOADER
 ========================================================= -->
 
-    <div class="preloader" id="preloader">
-        <div class="loader-content">
-            <div class="loader-logo">T</div>
-            <h3>TALENTIQ</h3>
-            <span>Admin Platform</span>
-        </div>
-    </div>
+  
 
 
     <!-- =========================================================
@@ -1919,21 +1943,16 @@
 
             <div class="brand">
 
-                <div class="brand-mark">
-                    T
-                </div>
+    <a href="user-dashboard.html" class="brand-logo-link" aria-label="Go to User Dashboard">
+        <img src="assets/logo.webp"
+             alt="TALENTIQ"
+             class="brand-logo"
+             loading="eager">
+    </a>
 
-                <div class="brand-text">
-                    <strong>TALENTIQ</strong>
-                    <span>AI RECRUITMENT</span>
-                </div>
+</div>
 
-            </div>
-
-            <div class="admin-badge">
-                <i class="fa-solid fa-shield-halved"></i>
-                &nbsp; Platform Admin
-            </div>
+           
 
             <nav class="sidebar-nav">
 
@@ -1990,19 +2009,7 @@
 
             <div class="sidebar-bottom">
 
-                <div class="admin-mini">
-
-                    <div class="admin-avatar">
-                        JA
-                    </div>
-
-                    <div>
-                        <strong>James Anderson</strong>
-                        <span>Platform Administrator</span>
-                    </div>
-
-                </div>
-
+                
 
                 <button class="sidebar-link" data-action="signout">
 
@@ -2093,27 +2100,7 @@
                     </button>
 
 
-                    <button class="profile-trigger" id="profileTrigger">
-
-                        <div class="profile-avatar">
-                            JA
-                        </div>
-
-                        <div class="profile-info">
-
-                            <strong>James Anderson</strong>
-
-                            <span>Platform Administrator</span>
-
-                        </div>
-
-                        <i class="fa-solid fa-chevron-down" style="font-size:9px;color:#8491A2;">
-                        </i>
-
-                    </button>
-
-                </div>
-
+                    
             </header>
 
 
@@ -2140,7 +2127,7 @@
                             </div>
 
                             <h2>
-                                Welcome back, James Anderson
+                                Welcome back, ADMIN
                             </h2>
 
                             <p>

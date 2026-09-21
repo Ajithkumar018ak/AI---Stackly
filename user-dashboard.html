@@ -2592,6 +2592,38 @@
             }
 
         }
+
+
+
+        .sidebar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-logo-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.sidebar-logo {
+    display: block;
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
     </style>
 </head>
 
@@ -2618,16 +2650,14 @@
 
             <div class="sidebar-brand">
 
-                <div class="brand-logo">
-                    <i class="fa-solid fa-brain"></i>
-                </div>
+    <a href="user-dashboard.html" class="sidebar-logo-link" aria-label="Go to User Dashboard">
+        <img src="assets/logo.webp"
+             alt="TALENTIQ"
+             class="sidebar-logo"
+             loading="eager">
+    </a>
 
-                <div class="brand-text">
-                    <strong>TALENTIQ</strong>
-                    <span>AI RECRUITMENT PLATFORM</span>
-                </div>
-
-            </div>
+</div>
 
 
             <nav class="sidebar-nav">
@@ -2640,7 +2670,7 @@
 
                 <button class="sidebar-link active" data-section="dashboard">
 
-                    <i class="fa-solid fa-grid-2"></i>
+                  <i class="fa-solid fa-table-cells-large"></i>
 
                     <span>Dashboard</span>
 
@@ -2687,53 +2717,7 @@
                 </button>
 
 
-                <button class="sidebar-link" data-section="talent-pool">
-
-                    <i class="fa-solid fa-user-group"></i>
-
-                    <span>Talent Pool</span>
-
-                </button>
-
-
-                <button class="sidebar-link" data-section="messages">
-
-                    <i class="fa-solid fa-message"></i>
-
-                    <span>Messages</span>
-
-                    <span class="nav-count">3</span>
-
-                </button>
-
-
-                <button class="sidebar-link" data-section="notifications">
-
-                    <i class="fa-solid fa-bell"></i>
-
-                    <span>Notifications</span>
-
-                    <span class="nav-count">5</span>
-
-                </button>
-
-
-                <button class="sidebar-link" data-section="reports">
-
-                    <i class="fa-solid fa-chart-line"></i>
-
-                    <span>Reports</span>
-
-                </button>
-
-
-                <button class="sidebar-link" data-section="profile">
-
-                    <i class="fa-solid fa-user"></i>
-
-                    <span>Profile</span>
-
-                </button>
+               
 
 
             </nav>
@@ -2742,14 +2726,7 @@
             <div class="sidebar-bottom">
 
 
-                <button class="sidebar-link" data-section="settings">
-
-                    <i class="fa-solid fa-gear"></i>
-
-                    <span>Settings</span>
-
-                </button>
-
+              
 
                 <button class="sidebar-link" id="signOutBtn">
 
@@ -2845,23 +2822,7 @@
                     </button>
 
 
-                    <div class="profile">
-
-                        <img class="profile-avatar" src="https://i.pravatar.cc/150?img=12" alt="Alex Morgan">
-
-                        <div class="profile-info">
-
-                            <strong>
-                                Alex Morgan
-                            </strong>
-
-                            <span>
-                                Recruitment Manager
-                            </span>
-
-                        </div>
-
-                    </div>
+                    
 
 
                 </div>
@@ -2899,7 +2860,7 @@
 
                             <h1>
                                 Welcome back,
-                                <span>Alex Morgan</span>
+                                <span>USER</span>
                             </h1>
 
 
@@ -2971,7 +2932,7 @@
                                 <div>
 
                                     <h3>
-                                        Sophia Williams
+                                        Sophia
                                     </h3>
 
                                     <p>
