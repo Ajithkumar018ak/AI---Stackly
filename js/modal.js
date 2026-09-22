@@ -122,3 +122,8 @@ function initAuthModal() {
     });
   });
 }
+
+
+const name = document.getElementById("name").value.trim();
+
+localStorage.setItem("userName", name);

@@ -2858,10 +2858,10 @@
                             </div>
 
 
-                            <h1>
-                                Welcome back,
-                                <span>USER</span>
-                            </h1>
+                          <h1>
+    Welcome back,
+    <span id="userName">USER</span>
+</h1>
 
 
                             <p>
@@ -6636,7 +6636,13 @@
 
             });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const userName = localStorage.getItem("userName");
 
+    if (userName) {
+        document.getElementById("userName").textContent = userName;
+    }
+});
         /* =========================================================
            ACTIVE SECTION ON LOAD
         ========================================================= */

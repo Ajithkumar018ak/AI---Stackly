@@ -1542,3 +1542,721 @@ body.cursor-hover-image .custom-cursor-circle span {
     }
 
 }
+
+
+
+
+
+/* Process Steps - Responsive */
+@media (max-width: 900px) {
+  .reveal-scale {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 12px !important;
+    margin-bottom: 40px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .reveal-scale {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+    margin-bottom: 35px !important;
+  }
+
+  .reveal-scale > div {
+    padding: 16px 10px !important;
+    min-height: 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .reveal-scale > div > div {
+    font-size: 0.68rem !important;
+    margin-bottom: 5px !important;
+  }
+
+  .reveal-scale > div h4 {
+    font-size: 0.78rem !important;
+    line-height: 1.2;
+    margin: 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .reveal-scale {
+    gap: 8px !important;
+  }
+
+  .reveal-scale > div {
+    padding: 14px 8px !important;
+    min-height: 78px;
+  }
+
+  .reveal-scale > div h4 {
+    font-size: 0.72rem !important;
+  }
+}
+
+
+
+
+/* Workflow Card - Responsive */
+@media (max-width: 768px) {
+  .reveal {
+    border-radius: 18px !important;
+  }
+
+  .reveal > img {
+    height: 320px !important;
+  }
+
+  .reveal > div {
+    padding: 24px !important;
+  }
+
+  .reveal > div > div {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 18px !important;
+  }
+
+  .reveal > div h3 {
+    font-size: 1.15rem !important;
+    line-height: 1.3 !important;
+    margin-bottom: 7px !important;
+  }
+
+  .reveal > div p {
+    font-size: 0.85rem !important;
+    line-height: 1.5 !important;
+    margin: 0 !important;
+  }
+
+  .reveal > div .btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 12px 16px !important;
+    font-size: 0.75rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .reveal > img {
+    height: 300px !important;
+  }
+
+  .reveal > div {
+    padding: 20px !important;
+  }
+
+  .reveal > div h3 {
+    font-size: 1.05rem !important;
+  }
+
+  .reveal > div p {
+    font-size: 0.82rem !important;
+  }
+}
+
+
+
+
+/* ============================================================
+   ABOUT PAGE — SECTION COLOR SEPARATION
+   Prevent continuous color blending
+   ============================================================ */
+
+.about-page .section {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* ============================================================
+   LIGHT CONTRAST SECTIONS
+   ============================================================ */
+
+.about-page .about-light-section {
+    background: var(--surface-white);
+    color: var(--dark-text);
+}
+
+.about-page .about-light-section .section-title {
+    color: var(--dark-text);
+}
+
+.about-page .about-light-section .section-subtitle,
+.about-page .about-light-section p {
+    color: var(--dark-muted);
+}
+
+.about-page .about-light-section .eyebrow {
+    color: var(--primary);
+}
+
+
+/* ============================================================
+   LIGHT SECTION CARDS
+   ============================================================ */
+
+.about-page .about-light-card {
+    background: #ffffff;
+    border: 1px solid var(--border-light);
+    box-shadow: var(--shadow-sm);
+    color: var(--dark-text);
+}
+
+.about-page .about-light-card h3,
+.about-page .about-light-card h4 {
+    color: var(--dark-text);
+}
+
+.about-page .about-light-card p {
+    color: var(--dark-muted);
+}
+
+
+/* ============================================================
+   DARK SECTION — STRONGER SEPARATION
+   ============================================================ */
+
+.about-page .about-dark-card {
+    background: var(--surface);
+    border: 1px solid var(--border-dark);
+}
+
+
+/* ============================================================
+   SECTION DIVIDERS
+   ============================================================ */
+
+.about-page .section + .section {
+    position: relative;
+}
+
+.about-page .section + .section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 8%;
+    right: 8%;
+    height: 1px;
+    background: var(--border-dark);
+    opacity: .45;
+}
+
+.about-page .about-light-section + .section::before {
+    background: var(--border-light);
+}
+
+
+/* ============================================================
+   ACCENT TOP LINE
+   ============================================================ */
+
+.about-page .about-accent-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.about-page .about-accent-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(
+        90deg,
+        var(--cyan),
+        var(--primary-soft),
+        var(--success)
+    );
+    opacity: .8;
+}
+
+
+/* ============================================================
+   LIGHT SECTION HOVER
+   ============================================================ */
+
+.about-page .about-light-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 0, 0, .12);
+    box-shadow: var(--shadow-lg);
+}
+
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+
+@media (max-width: 768px) {
+
+    .about-page .section + .section::before {
+        left: 5%;
+        right: 5%;
+    }
+
+}
+
+
+
+/* ============================================================
+   SOLUTIONS — WHITE SECTION GRID VISIBILITY FIX
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   WHITE SOLUTION SECTIONS
+   ------------------------------------------------------------ */
+
+.solutions-page .section[style*="surface-white"] {
+    position: relative;
+    background:
+        radial-gradient(
+            circle at 8% 15%,
+            rgba(0, 210, 255, 0.055),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 92% 80%,
+            rgba(110, 80, 255, 0.045),
+            transparent 30%
+        ),
+        #f5f8fb !important;
+
+    color: var(--dark-text);
+    overflow: hidden;
+}
+
+
+/* ------------------------------------------------------------
+   SOFT SECTION EDGE
+   ------------------------------------------------------------ */
+
+.solutions-page .section[style*="surface-white"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 1px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(0, 210, 255, 0.35),
+        rgba(110, 80, 255, 0.25),
+        transparent
+    );
+
+    pointer-events: none;
+}
+
+
+/* ------------------------------------------------------------
+   SECTION CONTENT ABOVE BACKGROUND
+   ------------------------------------------------------------ */
+
+.solutions-page .section[style*="surface-white"] > .container {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* ------------------------------------------------------------
+   WHITE SECTION HEADER
+   ------------------------------------------------------------ */
+
+.solutions-page .section[style*="surface-white"] .section-title {
+    color: var(--dark-text) !important;
+}
+
+.solutions-page .section[style*="surface-white"] .section-subtitle {
+    color: var(--dark-muted) !important;
+}
+
+
+/* ------------------------------------------------------------
+   ALL WHITE SECTION GRIDS
+   ------------------------------------------------------------ */
+
+.solutions-page .section[style*="surface-white"] .resource-grid,
+.solutions-page .section[style*="surface-white"] .grid-3col {
+    position: relative;
+}
+
+
+/* ------------------------------------------------------------
+   AMBIENT GLOW BEHIND GRID
+   ------------------------------------------------------------ */
+
+.solutions-page .section[style*="surface-white"] .resource-grid::before,
+.solutions-page .section[style*="surface-white"] .grid-3col::before {
+    content: "";
+
+    position: absolute;
+
+    left: 4%;
+    right: 4%;
+
+    top: 15%;
+    bottom: 15%;
+
+    background:
+        radial-gradient(
+            circle at 20% 50%,
+            rgba(0, 210, 255, 0.12),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 80% 50%,
+            rgba(115, 75, 255, 0.10),
+            transparent 28%
+        );
+
+    filter: blur(35px);
+
+    z-index: 0;
+
+    pointer-events: none;
+}
+
+
+/* ------------------------------------------------------------
+   GRID CHILDREN
+   ------------------------------------------------------------ */
+
+.solutions-page .section[style*="surface-white"] .resource-grid > *,
+.solutions-page .section[style*="surface-white"] .grid-3col > * {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* ------------------------------------------------------------
+   WHITE RESOURCE CARDS
+   ------------------------------------------------------------ */
+
+.solutions-page .section[style*="surface-white"] .resource-card {
+    position: relative;
+
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #fbfdff 100%
+        ) !important;
+
+    border: 1px solid rgba(16, 32, 48, 0.12) !important;
+
+    border-radius: var(--radius-lg);
+
+    box-shadow:
+        0 8px 28px rgba(15, 30, 45, 0.07),
+        0 2px 8px rgba(15, 30, 45, 0.04);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+
+    overflow: hidden;
+}
+
+
+/* ------------------------------------------------------------
+   CARD TOP ACCENT LINE
+   ------------------------------------------------------------ */
+
+.solutions-page .section[style*="surface-white"] .resource-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 18px;
+    right: 18px;
+
+    height: 2px;
+
+    background: linear-gradient(
+        90deg,
+        var(--cyan),
+        var(--primary)
+    );
+
+    opacity: 0.65;
+
+    border-radius: 0 0 10px 10px;
+}
+
+
+/* ------------------------------------------------------------
+   CARD INNER GLOW
+   ------------------------------------------------------------ */
+
+.solutions-page .section[style*="surface-white"] .resource-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 130px;
+    height: 130px;
+
+    right: -65px;
+    top: -65px;
+
+    background: rgba(0, 210, 255, 0.10);
+
+    filter: blur(35px);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+
+/* ------------------------------------------------------------
+   CYAN CARD
+   ------------------------------------------------------------ */
+
+.solutions-page .section[style*="surface-white"]
+.resource-card.cyan-glow {
+
+    box-shadow:
+        0 8px 28px rgba(15, 30, 45, 0.07),
+        0 0 35px rgba(0, 210, 255, 0.10);
+}
+
+.solutions-page .section[style*="surface-white"]
+.resource-card.cyan-glow:hover {
+
+    transform: translateY(-7px);
+
+    border-color: rgba(0, 210, 255, 0.42) !important;
+
+    box-shadow:
+        0 18px 45px rgba(15, 30, 45, 0.11),
+        0 0 42px rgba(0, 210, 255, 0.18);
+}
+
+
+/* ------------------------------------------------------------
+   PURPLE CARD
+   ------------------------------------------------------------ */
+
+.solutions-page .section[style*="surface-white"]
+.resource-card.purple-glow {
+
+    box-shadow:
+        0 8px 28px rgba(15, 30, 45, 0.07),
+        0 0 35px rgba(115, 75, 255, 0.09);
+}
+
+.solutions-page .section[style*="surface-white"]
+.resource-card.purple-glow:hover {
+
+    transform: translateY(-7px);
+
+    border-color: rgba(115, 75, 255, 0.40) !important;
+
+    box-shadow:
+        0 18px 45px rgba(15, 30, 45, 0.11),
+        0 0 42px rgba(115, 75, 255, 0.17);
+}
+
+
+/* ------------------------------------------------------------
+   GREEN CARD
+   ------------------------------------------------------------ */
+
+.solutions-page .section[style*="surface-white"]
+.resource-card.green-glow {
+
+    box-shadow:
+        0 8px 28px rgba(15, 30, 45, 0.07),
+        0 0 35px rgba(0, 190, 145, 0.08);
+}
+
+.solutions-page .section[style*="surface-white"]
+.resource-card.green-glow:hover {
+
+    transform: translateY(-7px);
+
+    border-color: rgba(0, 190, 145, 0.40) !important;
+
+    box-shadow:
+        0 18px 45px rgba(15, 30, 45, 0.11),
+        0 0 42px rgba(0, 190, 145, 0.16);
+}
+
+
+/* ------------------------------------------------------------
+   WHITE SECTION — NORMAL CARDS
+   ------------------------------------------------------------ */
+
+.solutions-page .section[style*="surface-white"]
+.hover-lift {
+
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff,
+            #fbfdff
+        ) !important;
+
+    border: 1px solid rgba(16, 32, 48, 0.12) !important;
+
+    box-shadow:
+        0 8px 26px rgba(15, 30, 45, 0.07),
+        0 0 24px rgba(0, 210, 255, 0.055);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.solutions-page .section[style*="surface-white"]
+.hover-lift:hover {
+
+    transform: translateY(-6px);
+
+    border-color: rgba(0, 210, 255, 0.30) !important;
+
+    box-shadow:
+        0 18px 40px rgba(15, 30, 45, 0.10),
+        0 0 35px rgba(0, 210, 255, 0.12);
+}
+
+
+/* ------------------------------------------------------------
+   DARK TEXT INSIDE WHITE CARDS
+   ------------------------------------------------------------ */
+
+.solutions-page .section[style*="surface-white"]
+.resource-card h3,
+.solutions-page .section[style*="surface-white"]
+.hover-lift h3 {
+
+    color: var(--dark-text) !important;
+}
+
+
+.solutions-page .section[style*="surface-white"]
+.resource-card p,
+.solutions-page .section[style*="surface-white"]
+.hover-lift p {
+
+    color: var(--dark-muted) !important;
+}
+
+
+/* ------------------------------------------------------------
+   NUMBER / EYEBROW VISIBILITY
+   ------------------------------------------------------------ */
+
+.solutions-page .section[style*="surface-white"]
+.eyebrow {
+
+    color: var(--cyan);
+}
+
+
+/* ------------------------------------------------------------
+   WHITE CTA PANEL
+   ------------------------------------------------------------ */
+
+.solutions-page .section[style*="surface-white"]
+[style*="radial-gradient"] {
+
+    border: 1px solid rgba(16, 32, 48, 0.13) !important;
+
+    box-shadow:
+        0 20px 70px rgba(15, 30, 45, 0.09),
+        0 0 60px rgba(0, 210, 255, 0.08);
+}
+
+
+/* ============================================================
+   EXTRA GRID SEPARATION
+   ============================================================ */
+
+.solutions-page .section[style*="surface-white"] .resource-grid {
+    padding: 8px;
+}
+
+
+/* ------------------------------------------------------------
+   MOBILE
+   ------------------------------------------------------------ */
+
+@media (max-width: 900px) {
+
+    .solutions-page .section[style*="surface-white"]
+    .resource-grid,
+    .solutions-page .section[style*="surface-white"]
+    .grid-3col {
+
+        gap: 18px;
+    }
+
+    .solutions-page .section[style*="surface-white"]
+    .resource-card,
+    .solutions-page .section[style*="surface-white"]
+    .hover-lift {
+
+        box-shadow:
+            0 7px 22px rgba(15, 30, 45, 0.08),
+            0 0 22px rgba(0, 210, 255, 0.07);
+    }
+}
+
+
+@media (max-width: 640px) {
+
+    .solutions-page .section[style*="surface-white"] {
+
+        background:
+            radial-gradient(
+                circle at 50% 10%,
+                rgba(0, 210, 255, 0.045),
+                transparent 30%
+            ),
+            #f5f8fb !important;
+    }
+
+    .solutions-page .section[style*="surface-white"]
+    .resource-grid,
+    .solutions-page .section[style*="surface-white"]
+    .grid-3col {
+
+        padding: 4px;
+        gap: 16px;
+    }
+
+    .solutions-page .section[style*="surface-white"]
+    .resource-grid::before,
+    .solutions-page .section[style*="surface-white"]
+    .grid-3col::before {
+
+        filter: blur(25px);
+        opacity: 0.7;
+    }
+
+    .solutions-page .section[style*="surface-white"]
+    .resource-card,
+    .solutions-page .section[style*="surface-white"]
+    .hover-lift {
+
+        border-radius: 16px;
+
+        box-shadow:
+            0 8px 24px rgba(15, 30, 45, 0.08),
+            0 0 18px rgba(0, 210, 255, 0.055);
+    }
+}
