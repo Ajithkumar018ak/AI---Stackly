@@ -40,15 +40,25 @@ function initLoginFormValidation() {
   if (loginSubmitBtn) {
     loginSubmitBtn.addEventListener('click', (e) => {
       e.preventDefault();
+
       const email = document.getElementById('loginEmail')?.value.trim();
       const password = document.getElementById('loginPassword')?.value.trim();
 
       if (!email || !password) {
-        showFormMessage('loginError', 'Please fill in both email and password.');
+        showFormMessage(
+          'loginError',
+          'Please fill in both email and password.'
+        );
         return;
       }
 
-      // Demo User Login Redirect
+      /* Save logged-in user's name */
+      const userName = email.split('@')[0];
+
+      localStorage.setItem('userName', userName);
+      localStorage.setItem('userEmail', email);
+
+      /* Demo User Login Redirect */
       window.location.href = 'user-dashboard.html';
     });
   }
@@ -56,15 +66,25 @@ function initLoginFormValidation() {
   if (adminSubmitBtn) {
     adminSubmitBtn.addEventListener('click', (e) => {
       e.preventDefault();
+
       const email = document.getElementById('loginEmail')?.value.trim();
       const password = document.getElementById('loginPassword')?.value.trim();
 
       if (!email || !password) {
-        showFormMessage('loginError', 'Please fill in both admin email and password.');
+        showFormMessage(
+          'loginError',
+          'Please fill in both admin email and password.'
+        );
         return;
       }
 
-      // Demo Admin Login Redirect
+      /* Save logged-in admin */
+      const adminName = email.split('@')[0];
+
+      localStorage.setItem('userName', adminName);
+      localStorage.setItem('userEmail', email);
+
+      /* Demo Admin Login Redirect */
       window.location.href = 'admin-dashboard.html';
     });
   }

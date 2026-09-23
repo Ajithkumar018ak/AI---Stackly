@@ -6636,12 +6636,13 @@
 
             });
 
-document.addEventListener("DOMContentLoaded", () => {
-    const userName = localStorage.getItem("userName");
+document.addEventListener('DOMContentLoaded', () => {
+  const userNameElement = document.getElementById('userName');
+  const savedName = localStorage.getItem('userName');
 
-    if (userName) {
-        document.getElementById("userName").textContent = userName;
-    }
+  if (userNameElement && savedName) {
+    userNameElement.textContent = savedName;
+  }
 });
         /* =========================================================
            ACTIVE SECTION ON LOAD
